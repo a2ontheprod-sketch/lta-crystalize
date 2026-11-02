@@ -1,0 +1,25 @@
+LTA CRYSTALIZE v1.0.1 — CLOUD BUILD (NO LOCAL COMPILER)
+
+This package includes a GitHub Actions workflow. GitHub's Windows build
+computer compiles the VST3, so you do not need Visual Studio, Git, or CMake
+installed on your own PC.
+
+1. Sign in to https://github.com (create a free account if needed).
+2. Create a new repository. Name it LTA-Crystalize. Public or private is fine.
+3. On the repository page choose "Add file" > "Upload files".
+4. Extract this ZIP on your PC. Upload the CONTENTS of the extracted folder,
+   including the hidden .github folder. If Windows hides .github, enable
+   View > Show > Hidden items in File Explorer.
+5. Commit the uploaded files to the repository.
+6. Open the repository's Actions tab.
+7. Select "Build LTA Crystalize VST3" on the left.
+8. Press "Run workflow", then press the green "Run workflow" button.
+9. Wait for the workflow to finish successfully.
+10. Open the completed run. At the bottom, download the artifact named
+    "LTA-Crystalize-Windows-VST3".
+11. Extract that downloaded ZIP. Copy "LTA Crystalize.vst3" into:
+    C:\Program Files\Common Files\VST3\
+12. Restart FL Studio and scan for plugins.
+
+The workflow downloads JUCE and compiles the Windows VST3 on GitHub.
+No local build tools are required.
