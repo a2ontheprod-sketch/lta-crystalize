@@ -25,6 +25,7 @@ juce_add_plugin(LTA_Crystalize
     IS_MIDI_EFFECT FALSE
     COPY_PLUGIN_AFTER_BUILD FALSE
 )
+juce_generate_juce_header(LTA_Crystalize)
 
 target_sources(LTA_Crystalize PRIVATE
     Source/PluginProcessor.cpp
